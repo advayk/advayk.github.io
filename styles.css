@@ -19,3 +19,8 @@ body {
 .wrapper { 
   width: 100px;
 }
+
+
+header {
+  width: 200px;
+}
