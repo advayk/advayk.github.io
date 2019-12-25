@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<meta name="google-site-verification" content="6Xg5mlQfctEC0KV6DG7pD_OewGah8D3F4G2NK28-I80" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>01 - Particle text using BlotterJS</title>
+	<script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+	<script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<title>Advay Koranne</title>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		canvas {
+			width: 20%;
+			height: 20%
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main"></div>
+
+	<script src="three.js"></script>
+	<script>
+		container = document.getElementById("main");
+		var text = new Blotter.Text("AdvayKoranne", {
+			family: "serif",
+			size: 300,
+			fill: "#fff",
+			paddingLeft: 80,
+			paddingRight: 80,
+			paddingTop: 50,
+			paddingBottom: 50
+		});
+		var material = new Blotter.FliesMaterial();
+		material.uniforms.uPointCellWidth.value = 0.01;
+		material.uniforms.uPointRadius.value = 0.3;
+		material.uniforms.uSpeed.value = 3;
+		var blotter = new Blotter(material, {
+			texts: text
+		});
+		var scope = blotter.forText(text);
+		scope.appendTo(container);
+		
+	</script>
+</body>
+<center>
+	<font color="white">
+		<font face="times new roman">
+<div class="column middle">
+	<font size="6">
+    I am Senior at Catlin Gabel Highschool in Portland, Oregon. Interested in majoring in Computer Science and Mathematics with a minor in Chinese.
+	</font>
+</font>
+</font>
+</html>
