@@ -16,7 +16,7 @@
 
 <script>
     container = document.getElementById("main");
-    var text = new Blotter.Text("Advay Koranne", {
+    var text = new Blotter.Text("2 Koranne", {
         family: "serif",
         size: 200,
         fill: "#fff",
@@ -44,7 +44,7 @@
     I am Senior at Catlin Gabel Highschool in Portland, Oregon. Interested in majoring in Computer Science and Mathematics with a minor in Chinese. 
     </font>
         <div class="dropdown-content">
-            <a href="about.md">help</a>
+            <a href="page2.html">help</a>
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
