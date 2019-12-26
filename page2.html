@@ -11,6 +11,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<font size="4">
-page 2 
+
+    <div id="main"></div>
+
+<script>
+    container = document.getElementById("main");
+    var text = new Blotter.Text("2 Koranne", {
+        family: "serif",
+        size: 200,
+        fill: "#fff",
+        paddingLeft: 80,
+        paddingRight: 80,
+        paddingTop: 80,
+        paddingBottom: 80
+    });
+    var material = new Blotter.FliesMaterial();
+    material.uniforms.uPointCellWidth.value = 0.01;
+    material.uniforms.uPointRadius.value = 0.3;
+    material.uniforms.uSpeed.value = 3;
+    var blotter = new Blotter(material, {
+        texts: text
+    });
+    var scope = blotter.forText(text);
+    scope.appendTo(container);
+</script>
+</body>
+<center>
+	<font color="white">
+		<font face="times new roman">
+<div class="column middle">
+	<font size="4">
+    I am Senior at Catlin Gabel Highschool in Portland, Oregon. Interested in majoring in Computer Science and Mathematics with a minor in Chinese. 
+    </font>
+        <div class="dropdown-content">
+            <a href="page2.html">help</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      
 </font>
+</font>
+</html>
