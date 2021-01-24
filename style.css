@@ -15,3 +15,8 @@ ul
 {
 line-height:300%
 {
+    
+ul {
+  list-style-position: outside;
+}
+
