@@ -52,20 +52,12 @@ body {
   color: black;
 }
 
-/* Create three unequal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  padding: 6px;
-}
-
-/* Left and right column */
-.column.side {
-  width: 30%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 40%;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -74,39 +66,13 @@ body {
   display: table;
   clear: both;
 }
-  
-ul {
-  line-height:100%
-  list-style-position: inside;
-}
-  
-.justify {
-  text-align: justify;
-  text-justify: inter-word;
-}
-  
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height: 40px;
-  background-color: #FFFFFF;
-  background-position: center;
-  color: black;
-}
 
-
-
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .column {
     width: 100%;
   }
 }
-  
-  
 </style>
 </head>
 <body>
@@ -120,7 +86,7 @@ ul {
 <font size="4">
   <font face="times new roman">
 <div class="row">
-  <div class="column side">
+  <div class="column" style="background-color:#aaa;">
     <h2>About me</h2>
        <img src="Screen Shot 2019-11-24 at 9.11.08 PM.png" alt=" " style="width: 80%;max-height: 80%" /> 
           <p class="view">Contact: <a href="ak845@cornell.edu">ak845@cornell.edu</a><br>
@@ -129,7 +95,7 @@ ul {
       </header>
   </div>
   
-  <div class="column middle">
+  <div class="column" style="background-color:#bbb;">
   <div class='justify'>
   <ul>
     <h2>Relevant Experinces</h2>
@@ -151,27 +117,24 @@ ul {
       <li>3rd Degree Kukkiwon certified black belt (2011 - present), referee certified, 3rd in OR (2018) and 3rd (2019). Competed at 2018(64th) and 2019(58th) Taekwondo Nationals</li>
       <li> Best of Fair North West Science Expo and 1st Place CS and Robotics NWSE. </li>
       <li> Intel International Science Fair Finalist. </li>
-  
   <h2>Relevant Course Work</h2>
        <li> CS Courses: OOP & Data Structures, Discrete Structures, Computational Mathematics for Computer Science.  
        <li>Math Courses: Linear Algebra, Multivariable Calculus, Real Analysis.  
+  <h2>About me</h2>
+      <li>2nd year student at Cornell University planning on majoring in math and CS</li>
+      <li><a href="https://www.youtube.com/watch?v=LQAtr9q_ixQ">Enjoy Playing tabla</a>, chess, spikeball, poker, crypto and snowboarding at Mt. Hood on powder days </li>
+      <li>Planning on majoring in Computer Science and Mathematics</li>
+  <h2>Skills</h2>
+    <li> Programming Languages: Python (Intermediate); Java (Intermediate); Julia (Beginner); OCaml(Beginner)
+    <li> Tools: Tableau, Git, LATEX, Selenium, Pandas, NumPy.
+    <li> Languages: Hindi (Fluent), Mandarin (Proficient).
+    </p>
   </ul>
   </div>
   </div>
   </ul>
   <ul>
   <div class="column side">
-    
-    <h2>About me</h2>
-    <p>
-      <li>2nd year student at Cornell University planning on majoring in math and CS</li>
-      <li><a href="https://www.youtube.com/watch?v=LQAtr9q_ixQ">Enjoy Playing tabla</a>, chess, spikeball, poker, crypto and snowboarding at Mt. Hood on powder days </li>
-      <li>Planning on majoring in Computer Science and Mathematics</li>
-    </p>
-    <h2>Skills</h2>
-    <li> Programming Languages: Python (Intermediate); Java (Intermediate); Julia (Beginner); OCaml(Beginner)
-    <li> Tools: Tableau, Git, LATEX, Selenium, Pandas, NumPy.
-    <li> Languages: Hindi (Fluent), Mandarin (Proficient).
   </div>
   </ul>
 </ul>
