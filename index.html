@@ -1,55 +1,168 @@
+<!–– https://www.w3schools.com/css/tryit.asp?filename=trycss_website_layout_grid2 ––>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="6Xg5mlQfctEC0KV6DG7pD_OewGah8D3F4G2NK28-I80" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Advay Koranne</title>
-    <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
-    <script src="https://cdn.rawgit.com/bradley/Blotter/3007fe6e/build/materials/fliesMaterial.js"></script>
-    <link rel="stylesheet" href="style.css">
+
+<title> Advay Koranne </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  list-style-position: outside;
+}
+  
+/* Style the header */
+.header {
+  padding: 5px; /* some padding */
+  background-color: rgb(255, 255, 255);
+  <p style="font-size:50px">
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #34495E;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(0, 0, 0);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  padding: 70px;
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+footer {
+  text-align: center;
+  padding: 3px;
+}
+  
+.cover {
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 300px;
+}
+</style>
 </head>
 <body>
 
-    <div id="main"></div>
+<div class="header">
+  <h1> <center>  Advay Koranne </center> </h1>
+</div> 
 
-<script>
-    container = document.getElementById("main");
-    var text = new Blotter.Text("Advay Koranne", {
-        family: "serif",
-        size: 200,
-        fill: "#fff",
-        paddingLeft: 80,
-        paddingRight: 80,
-        paddingTop: 80,
-        paddingBottom: 80
-    });
-    var material = new Blotter.FliesMaterial();
-    material.uniforms.uPointCellWidth.value = 0.01;
-    material.uniforms.uPointRadius.value = 0.3;
-    material.uniforms.uSpeed.value = 3;
-    var blotter = new Blotter(material, {
-        texts: text
-    });
-    var scope = blotter.forText(text);
-    scope.appendTo(container);
-</script>
+<font color="black">
+<body style="background-color:white;"></body>
+<font size="4">
+  <font face="times new roman">
+<div class="row">
+  <div class="column left" style="background-color:#000);">
+     <center> <h2>About me</h2>  </center> 
+       <img src="head_shot.jpeg" class="cover" width="400" height="600" />
+           <center>  <p class="view">Contact: <a href="ak845@cornell.edu">ak845@cornell.edu</a><br>
+                       <a href="https://github.com/advayk">GitHub</a> |  <a href="https://www.linkedin.com/in/advay-koranne-ab029014a/">linkedin</a> |  <a href="https://twitter.com/AdvayKoranne">Twitter</a> 
+                        </p> </center> 
+      </header>
+  </div>
+  
+  <div class="column right" style="background-color:#000);">
+  <div class='justify'>
+  <ul>
+    <h2>Relevant Experinces</h2>
+    <p>
+       <li>Part-time Research Analyst @ OP Crypto Venture Capital (December 2021 - current)</li>
+       <li>Part-time Research Analyst @ Smith + Crown (June 2021 - December 2021)</li>
+       <li>Cornell Quant Fund Blockchain Team Lead (May 2021- Present) </li>
+       <li>Cornell Blockchain Analyst (Feb 2021- Present) </li>
+       <li>Research Fellowship @ Smith + Crown (May 2020-August 2020)</li>
+      <li>Mathnasium Instructor/Tutor - West Linn (February 2019 - August 2020</li>
+      <li>Software Intern Mentor Graphics a Siemens Business (June 2019 - August 2019)</li>
+    <h2>Research and articles</h2>
+      <li><a href="https://github.com/advayk/ISEF-2019-Research"</a> Non-Periodic Psudeo-Random Number Generator</a> (2018 - 2019).</li>
+      <li><a href="https://github.com/advayk/Zeckendorf-BBP"</a> Optimization of the Bailey–Borwein–Plouffe formula(BBP) algorithm by using the Zeckendorf theorem</a>   (2019 - 2020).</li>
+      <li><a href="https://smithandcrown.com/research/fan-tokens-gaining-popularity-amongst-fans-and-teams-alike/"</a> Fan Tokens Gaining Popularity Amongst Fans and Teams Alike</a> (2020).</li>
+    <h2>Awards</h2>
+      <li>2nd place Northwest Science Expo in Mathematical Sciences (2020).</li>
+      <li><a href="https://abstracts.societyforscience.org/Home/FullAbstract?ProjectId=18805">Honorable mention by the National Security Agency Research Directorate.</a> (2019)</li>
+      <li>Invited to present to National Security Agency lead Directorate. </li>
+      <li>3rd Degree Kukkiwon certified black belt (2011 - present). Competed at Taekwondo Nationals (2018, 2019)</li>
+      <li> Best of Fair North West Science Expo and 1st Place CS and Robotics NWSE. </li>
+      <li> Intel International Science Fair Finalist. </li>
+  <h2>Relevant Course Work</h2>
+       <li> CS Courses: OOP & Data Structures, Discrete Structures, Computational Mathematics for Computer Science.  
+       <li>Math Courses: Linear Algebra, Multivariable Calculus, Real Analysis.  
+  <h2>About me</h2>
+      <li>2nd year student at Cornell University planning on majoring in math and CS</li>
+      <li><a href="https://www.youtube.com/watch?v=LQAtr9q_ixQ">Enjoy Playing tabla</a>, chess, spikeball, poker, crypto and snowboarding at Mt. Hood on powder days </li>
+      <li>Planning on majoring in Computer Science and Mathematics</li>
+  <h2>Skills</h2>
+    <li> Programming Languages: Python (Intermediate); Java (Intermediate); Julia (Beginner); OCaml(Beginner)
+    <li> Tools: Tableau, Git, LaTeX, Selenium, Pandas, NumPy.
+    <li> Languages: Hindi (Fluent), Mandarin (Proficient).
+    </p>
+  </ul>
+  </div>
+  </div>
+  </ul>
+  <ul>
+  <div class="column side">
+  </div>
+  </ul>
+</ul>
+
+<div class="
+  <center>
+  Copyright © 2021
+  </center>
+</div>
+</div>
+</font> 
+</font>
 </body>
-<center>
-	<font color="white">
-		<font face="times new roman">
-<div class="column middle">
-	<font size="5">
-    I am second year at Cornell University planning on majoring in Mathematics and Computer Science. <a href="AboutMe.html">More about me.</a>. 
-    </font>
-<center>
-    <font color="white">
-        <font face="times new roman">
-<div class="column middle">
-    <font size="5">
-        © Advay Koranne 2021. 
-    </font>    
-</font>
-</font>
 </html>
